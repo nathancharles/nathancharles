@@ -1,0 +1,43 @@
+!!! 5
+/[if lt IE 7] <html lang="en" class="no-js ie6">
+/[if IE 7 ]    <html lang="en" class="no-js ie7">
+/[if IE 8 ]    <html lang="en" class="no-js ie8">
+/[if IE 9 ]    <html lang="en" class="no-js ie9">
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+%head
+  %meta{:charset => "utf-8"}
+  %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+
+  %title= current_page.data.title
+  %meta{:name => "description", :content => current_page.data.description}
+  %link{:rel => "canonical", :href => current_page.data.canonical}
+
+  = stylesheet_link_tag "all"
+  = javascript_include_tag  "all"
+
+%body{:class => page_classes}
+  %header
+    .content
+      %span.site-title
+        = succeed Haml::Engine.new('%strong cook').render do
+          = succeed Haml::Engine.new('charles').render do
+            %strong nathan
+      %nav
+        %ul
+          %li resume
+          %li contact
+          %li github
+
+  .content
+    = yield
+
+  %footer
+    .content
+      %span.copyright
+        Copyright &copy; Nathan Charles Cook
+      %nav
+        %ul
+          %li resume
+          %li contact
+          %li github

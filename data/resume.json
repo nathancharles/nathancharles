@@ -1,0 +1,69 @@
+{
+	"experience":[
+		{
+			"employer":"GoHealth Insurance",
+			"link":"http://www.gohealthinsurance.com",
+			"title":"Web Developer",
+			"description":"Develop and implement new features for consumer-facing web applications using a variety of languages and frameworks (PHP, Ruby on Rails, NodeJS, angular, JSTL, etc.). Utilize the Agile methodology to develop and communicate efficiently with team members. Constantly optimize, split-test, improve usability, and target analytics. Expand and enhance skillset through learning sessions with fellow employees.",
+			"start_date":"04.12"
+		},
+		{
+			"employer":"Andrew Lehman Design",
+			"link":"http://www.andrewlehmandesign.com",
+			"title":"Web Designer & Developer",
+			"description":"Worked with a variety of clients designing and developing websites and email marketing campaigns. I also managed all print design needs.",
+			"start_date":"01.11",
+			"end_date":"04.12"
+		},
+		{
+			"employer":"Freelance",
+			"title":"Graphic Designer and Web Developer",
+			"description":"Work with a variety of clients designing and developing marketing and promotional materials.",
+			"start_date":"11.08",
+			"end_date":""
+		},
+		{
+			"employer":"Minnesota State University, Mankato",
+			"link":"http://www.mnsu.edu",
+			"title":"Graphic Design Specialist",
+			"description":"Worked directly with clients designing print materials from conception through production. I also worked directly with the in-house press operators.",
+			"start_date":"04.07",
+			"end_date":"10.08"
+		}
+	],
+	"employment":[
+		{
+			"employer":"Cosi",
+			"title":"Shift Leader",
+			"description":"Managed employees, payroll and ordering. Resolved any operation issues.",
+			"start_date":"07.10",
+			"end_date":"01.11"
+		},
+		{
+			"employer":"Menards",
+			"title":"Delivery Coordinator",
+			"description":"Managed scheduling, loading and delivering of materials. Assisted customers, resolving their needs and delivery issues.",
+			"start_date":"09.02",
+			"end_date":"01.11"
+		}
+	],
+	"education":[
+		{
+			"school":"Minnesota State University, Mankato",
+			"major":"BFA in Graphic Design",
+			"start_date":"2004",
+			"end_date":"2008",
+			"misc":[
+				"secondary concentration in printmaking",
+				"graduated cum laude"
+			]
+		}
+	],
+	"skills":[
+		"Proficient in CSS3, HTML5 and Javascript",
+		"Proficient programming in PHP and Ruby on Rails",
+		"Proficient with Git and Mercurial",
+		"Proficient in Adobe CS4",
+		"(Illustrator, InDesign, Photoshop, Dreamweaver)"
+	]
+}

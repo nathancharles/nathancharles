@@ -1,0 +1,17 @@
+.content {
+  @include container;
+}
+
+.section,
+.entry {
+  @include container;
+}
+.section-title,
+.date {
+  @include span-columns(4 alpha, 12);
+  text-align: right;
+}
+
+.meta {
+  @include span-columns(8 omega, 12);
+}
