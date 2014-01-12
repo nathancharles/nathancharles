@@ -27,6 +27,10 @@ require 'modernizr'
 #   page "/admin/*"
 # end
 
+data.projects.each do |project|
+  proxy "/#{project.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}.html", "/templates/projects.html", :locals => { :project => project }
+end
+
 ###
 # Helpers
 ###
