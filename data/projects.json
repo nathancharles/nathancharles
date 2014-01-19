@@ -1,6 +1,7 @@
 [
 	{
 		"name": "Evanston Awnings",
+		"shortName": "Evanston Awnings",
 		"description": "Evanston Awnings is a family-owned awning installation business based in Evanston, IL. Evanston Awnings has been active in the awning industry since 1931 and the families history in the industry dates back to the mid 1800's.",
 		"externalUrl": "http://www.evanstonawnings.com",
 		"images": [
@@ -11,6 +12,7 @@
 	},
 	{
 		"name": "The Smoking Gun",
+		"shortName": "Smoking Gun",
 		"description": "The Smoking Gun is a fictitious brew-pub with a 1930's prohibition/mobster theme. The branding focuses on showing a worn and aged look through distressed graphics. The beer labels are modeled after labels from the 1930's era with each named with a particular reference to that time. The advertising campaign focused on the unique services The Smoking Gun offers such as great food, fresh homemade beer and live music.",
 		"images": [
 			"smoking-gun/01.jpg",
@@ -20,6 +22,7 @@
 	},
 	{
 		"name": "3D Bass",
+		"shortName": "3D Bass",
 		"description": "3D Bass (Three Different Basses) is a branding system and press kit for a musician who plays bass guitar, upright Bass and piccolo bass. The graphic branding expresses the musician's personality and method of creating music. The bands of lines move independently of each other and work together to create a composition. The CD packaging uses a different graphic style to communicate it's title Go Tell Your Momma, and the \"Lyrics and Verse\" booklet combines the two styles together to give the project coherence.",
 		"images": [
 			"3d-bass/01.jpg",
@@ -39,6 +42,7 @@
 	},
 	{
 		"name": "MSU/GAC Conference",
+		"shortName": "MSU/GAC",
 		"description": "This is a promotional set for the \"Effectively Leading Diverse Schools and Communities\" conference for educational leaders throughout southern Minnesota. The branding for the materials evolved around the idea of a system that is dependent on all of its parts to function successfully, much like a system of gears. Connected circles are used over images of crowds, circling different people, to show this. Multiple color schemes were used for the posters to emphasize diversity.",
 		"images": [
 			"msu-gac/01.jpg",
@@ -48,6 +52,7 @@
 	},
 	{
 		"name": "Vague Transitions",
+		"shortName": "Vague Transitions",
 		"description": "This is a visual expression of the vague transitions in dreams; when one event or character becomes another without explanation. It is also a processing of ones experiences with their culture.",
 		"images": [
 			"vague-transitions/01.jpg"

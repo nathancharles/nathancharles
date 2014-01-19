@@ -32,10 +32,20 @@
   .content
     = yield
 
+  %aside.projects
+    - data.projects.each do |project|
+      .project
+        %a{:href => sluggify(project.shortName)}
+          = image_tag "/assets/images/"+project.images[0]
+          %span
+            = project.shortName
+
   %footer
     .content
       %span.copyright
-        Copyright &copy; Nathan Charles Cook
+        Copyright &copy;
+        = Time.now.year
+        Nathan Charles Cook
       %nav
         %ul
           %li resume

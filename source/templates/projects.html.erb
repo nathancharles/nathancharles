@@ -1,1 +1,10 @@
-<h1><%= project.name %></h1>
+<div class="date">
+	<h1><%= project.name %></h1>
+	<p><%= project.description %></p>
+</div>
+
+<div class="meta">
+<% project.images.each do |image| %>
+	<img src="/assets/images/<%= image %>" alt=""/>
+<% end %>
+</div>

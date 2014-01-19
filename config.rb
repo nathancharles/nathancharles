@@ -28,7 +28,7 @@ require 'modernizr'
 # end
 
 data.projects.each do |project|
-  proxy "/#{project.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}.html", "/templates/projects.html", :locals => { :project => project }
+  proxy "/#{project.shortName.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}.html", "/templates/projects.html", :locals => { :project => project }
 end
 
 ###
