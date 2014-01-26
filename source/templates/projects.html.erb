@@ -1,6 +1,9 @@
 <div class="date col-sm-4">
 	<h1><%= project.name %></h1>
 	<p><%= project.description %></p>
+	<% if project.externalUrl %>
+		<a href="<%= project.externalUrl %>" title="<%= project.name %>" target="_blank"><%= pretty_url(project.externalUrl) %></a>
+	<% end %>
 </div>
 
 <div class="meta col-sm-8">

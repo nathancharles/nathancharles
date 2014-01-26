@@ -1,5 +1,25 @@
+img {
+	max-width: 100%;
+}
+
 .container {
 	max-width: 1020px;
+}
+.site-title {
+	font-size: 225%;
+	a {
+		color: #333;
+		text-decoration: none;
+	}
+}
+.hero {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+.content {
+	margin-top: 5em;
+	margin-bottom: 5em;
 }
 
 .section,
@@ -43,4 +63,11 @@
 			transition: opacity 0.25s;
 		}
 	}
+}
+
+.footer {
+	border-top: 1px solid #eee;
+	padding-top: 2em;
+	margin-top: 2em;
+	font-size: 85%;
 }

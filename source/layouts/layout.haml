@@ -18,11 +18,12 @@
 
 %body{:class => page_classes}
   %header
-    .content.container
+    .container
       %span.site-title.col-sm-6
-        = succeed Haml::Engine.new('%strong cook').render do
-          = succeed Haml::Engine.new('charles').render do
-            %strong nathan
+        %a{:href => '/'}
+          = succeed Haml::Engine.new('%strong cook').render do
+            = succeed Haml::Engine.new('charles').render do
+              %strong nathan
       %nav.col-sm-6
         %ul.list-inline.pull-right
           %li
@@ -43,8 +44,8 @@
           %span
             = project.shortName
 
-  %footer
-    .content.container
+  %footer.footer
+    .container
       %span.copyright.col-sm-6
         Copyright &copy;
         = Time.now.year
