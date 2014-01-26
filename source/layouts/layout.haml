@@ -13,41 +13,47 @@
   %meta{:name => "description", :content => current_page.data.description}
   %link{:rel => "canonical", :href => current_page.data.canonical}
 
-  = stylesheet_link_tag "all"
+  = stylesheet_link_tag "all", "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
   = javascript_include_tag  "all"
 
 %body{:class => page_classes}
   %header
-    .content
-      %span.site-title
+    .content.container
+      %span.site-title.col-sm-6
         = succeed Haml::Engine.new('%strong cook').render do
           = succeed Haml::Engine.new('charles').render do
             %strong nathan
-      %nav
-        %ul
-          %li resume
+      %nav.col-sm-6
+        %ul.list-inline.pull-right
+          %li
+            =link_to "resume", "resume.html"
           %li contact
-          %li github
+          %li
+            %a{:href => "https://github.com/nathancharles", :target => "_blank"}
+              %i.fa.fa-github
 
-  .content
+  .content.container
     = yield
 
-  %aside.projects
+  %aside.container
     - data.projects.each do |project|
-      .project
+      .project.col-xs-4.col-sm-3
         %a{:href => sluggify(project.shortName)}
           = image_tag "/assets/images/"+project.images[0]
           %span
             = project.shortName
 
   %footer
-    .content
-      %span.copyright
+    .content.container
+      %span.copyright.col-sm-6
         Copyright &copy;
         = Time.now.year
         Nathan Charles Cook
-      %nav
-        %ul
-          %li resume
+      %nav.col-sm-6
+        %ul.list-inline.pull-right
+          %li
+            =link_to "resume", "resume.html"
           %li contact
-          %li github
+          %li
+            %a{:href => "https://github.com/nathancharles", :target => "_blank"}
+              %i.fa.fa-github

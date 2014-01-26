@@ -1,9 +1,9 @@
-<div class="date">
+<div class="date col-sm-4">
 	<h1><%= project.name %></h1>
 	<p><%= project.description %></p>
 </div>
 
-<div class="meta">
+<div class="meta col-sm-8">
 <% project.images.each do |image| %>
 	<img src="/assets/images/<%= image %>" alt=""/>
 <% end %>

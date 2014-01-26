@@ -17,5 +17,5 @@ end
 
 gem 'modernizr'
 gem 'compass-normalize'
-gem 'susy'
+gem 'bootstrap-sass'
 gem 'json'
