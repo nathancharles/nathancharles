@@ -1,16 +1,30 @@
 img {
 	max-width: 100%;
 }
+a {
+	color: lighten($gray-dark, 35%);
+	&:hover,
+	&:active {
+		text-decoration: none;
+		color: $gray-dark;
+	}
+}
 
 .container {
 	max-width: 1020px;
 }
+.header {
+	margin: 1em 0;
+}
 .site-title {
 	font-size: 225%;
 	a {
-		color: #333;
 		text-decoration: none;
+		color: $gray-dark;
 	}
+}
+.header nav {
+	font-size: 140%;
 }
 .hero {
 	text-align: center;
@@ -22,52 +36,14 @@ img {
 	margin-bottom: 5em;
 }
 
-.section,
-.entry {
-}
-.section-title,
-.date {
-	text-align: right;
-}
-
-.meta {
-}
-
-.project {
-	position: relative;
-	max-height: 15em;
-	overflow: hidden;
-	img {
-		max-width: 100%;
-		opacity: 0.25;
-		transition: opacity 0.25s;
-	}
-	span {
-		position: absolute;
-		top: 40%;
-		width: 100%;
-		text-align: center;
-		color: #333;
-		font-weight: bold;
-		font-size: 2em;
-		opacity: 1;
-		transition: opacity 0.25s;
-	}
-	&:hover {
-		span {
-			opacity: 0;
-			transition: opacity 0.25s;
-		}
-		img {
-			opacity: 1;
-			transition: opacity 0.25s;
-		}
-	}
+.section-title {
+	font-size: 1.2em;
 }
 
 .footer {
-	border-top: 1px solid #eee;
-	padding-top: 2em;
-	margin-top: 2em;
-	font-size: 85%;
+	margin: 3em 0 2em;
+	font-size: 90%;
+	ul {
+		margin: 0;
+	}
 }

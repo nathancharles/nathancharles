@@ -17,21 +17,14 @@
   = javascript_include_tag  "all"
 
 %body{:class => page_classes}
-  %header
+  %header.header
     .container
       %span.site-title.col-sm-6
         %a{:href => '/'}
           = succeed Haml::Engine.new('%strong cook').render do
             = succeed Haml::Engine.new('charles').render do
               %strong nathan
-      %nav.col-sm-6
-        %ul.list-inline.pull-right
-          %li
-            =link_to "resume", "resume.html"
-          %li contact
-          %li
-            %a{:href => "https://github.com/nathancharles", :target => "_blank"}
-              %i.fa.fa-github
+      = partial '/partials/navigation'
 
   .content.container
     = yield
@@ -39,7 +32,7 @@
   %aside.container
     - data.projects.each do |project|
       .project.col-xs-4.col-sm-3
-        %a{:href => sluggify(project.shortName)}
+        %a{:href => "/" + sluggify(project.shortName)}
           = image_tag "/assets/images/"+project.images[0]
           %span
             = project.shortName
@@ -50,11 +43,4 @@
         Copyright &copy;
         = Time.now.year
         Nathan Charles Cook
-      %nav.col-sm-6
-        %ul.list-inline.pull-right
-          %li
-            =link_to "resume", "resume.html"
-          %li contact
-          %li
-            %a{:href => "https://github.com/nathancharles", :target => "_blank"}
-              %i.fa.fa-github
+      = partial '/partials/navigation'
