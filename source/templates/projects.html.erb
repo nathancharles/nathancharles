@@ -1,3 +1,10 @@
+---
+title: #{project.name}
+---
+
+<% content_for(:title, project.name) %>
+<% content_for(:description, project.description) %>
+
 <div class="project-information col-sm-4">
 	<h1><%= project.name %></h1>
 	<p><%= project.description %></p>

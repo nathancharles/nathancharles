@@ -11,9 +11,9 @@
   %link{:rel => "icon", :type => "image/ico", :href => "/favicon.ico"}
 
   %title
-    = meta_title(current_page.data.title)
-  %meta{:name => "description", :content => current_page.data.description}
-  %link{:rel => "canonical", :href => "#{meta_canonical()}"}
+    = meta_title
+  %meta{:name => "description", :content => meta_description}
+  %link{:rel => "canonical", :href => meta_canonical}
 
   = stylesheet_link_tag "all", "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
   = javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "all"
