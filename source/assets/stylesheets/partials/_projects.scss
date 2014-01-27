@@ -9,6 +9,21 @@
 .meta {
 }
 
+.project-information {
+	text-align: right;
+	h1 {
+		margin-top:0;
+	}
+}
+.project-images {
+	img {
+		margin-bottom: 2em;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
 .project {
 	position: relative;
 	max-height: 15em;

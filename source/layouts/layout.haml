@@ -14,7 +14,7 @@
   %link{:rel => "canonical", :href => current_page.data.canonical}
 
   = stylesheet_link_tag "all", "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-  = javascript_include_tag  "all"
+  = javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "all"
 
 %body{:class => page_classes}
   %header.header
@@ -41,6 +41,7 @@
     .container
       %span.copyright.col-sm-6
         Copyright &copy;
-        = Time.now.year
+        %span#current-year
+          = Time.now.year
         Nathan Charles Cook
       = partial '/partials/navigation'
