@@ -3,6 +3,7 @@ img {
 }
 a {
 	color: lighten($gray-dark, 35%);
+	transition: color 0.25s;
 	&:hover,
 	&:active {
 		text-decoration: none;
@@ -17,34 +18,67 @@ a {
 	margin: 1em 0;
 }
 .site-title {
+	text-align: center;
 	font-size: 225%;
 	a {
 		text-decoration: none;
 		color: $gray-dark;
 	}
 }
+nav {
+	text-align: center;
+}
 .header nav {
 	font-size: 140%;
 	line-height: 2.5em;
+	ul {
+		margin: 0 auto;
+	}
 }
 .hero {
 	text-align: center;
 	width: 50%;
-	margin: 0 auto;
-}
-.content {
-	margin-top: 5em;
-	margin-bottom: 5em;
+	margin: 2em auto;
 }
 
-.section-title {
-	font-size: 1.2em;
-}
 
 .footer {
 	margin: 3em 0 2em;
 	font-size: 90%;
 	ul {
 		margin: 0;
+	}
+}
+.copyright {
+	text-align: center;
+}
+
+.section {
+	margin-bottom: 1em;
+}
+.section-title {
+	font-size: 1.75em;
+}
+
+@media (min-width: $screen-sm-min) {
+	.site-title,
+	.copyright {
+		text-align: left;
+	}
+	nav {
+		text-align: right;
+	}
+	.hero {
+		margin: 4em auto;
+	}
+	.section {
+		margin-bottom: 0;
+	}
+	.section-title {
+		font-size: 1.3em;
+	}
+	.section-title,
+	.date {
+		text-align: right;
 	}
 }

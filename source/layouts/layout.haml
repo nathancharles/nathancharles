@@ -19,11 +19,12 @@
 %body{:class => page_classes}
   %header.header
     .container
-      %span.site-title.col-sm-6
-        %a{:href => '/'}
-          = succeed Haml::Engine.new('%strong cook').render do
-            = succeed Haml::Engine.new('charles').render do
-              %strong nathan
+      .col-sm-6.site-title
+        %span
+          %a{:href => '/'}
+            = succeed Haml::Engine.new('%strong cook').render do
+              = succeed Haml::Engine.new('charles').render do
+                %strong nathan
       = partial '/partials/navigation'
 
   .content.container
@@ -39,9 +40,10 @@
 
   %footer.footer
     .container
-      %span.copyright.col-sm-6
-        Copyright &copy;
-        %span#current-year
-          = Time.now.year
-        Nathan Charles Cook
+      .copyright.col-sm-6
+        %span
+          Copyright &copy;
+          %span#current-year
+            = Time.now.year
+          Nathan Charles Cook
       = partial '/partials/navigation'

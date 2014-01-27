@@ -1,16 +1,4 @@
-.section,
-.entry {
-}
-.section-title,
-.date {
-	text-align: right;
-}
-
-.meta {
-}
-
 .project-information {
-	text-align: right;
 	h1 {
 		margin-top:0;
 	}
@@ -28,30 +16,36 @@
 	position: relative;
 	max-height: 15em;
 	overflow: hidden;
+	padding: 1em 0;
 	img {
-		max-width: 100%;
-		opacity: 0.25;
-		transition: opacity 0.25s;
+		max-width: 90%;
+		// opacity: 0.25;
+		// transition: opacity 0.25s;
 	}
 	span {
-		position: absolute;
-		top: 40%;
-		width: 100%;
-		text-align: center;
-		color: $gray-dark;
-		font-weight: bold;
-		font-size: 2em;
-		opacity: 1;
-		transition: opacity 0.25s;
+		display: none;
+		// position: absolute;
+		// top: 40%;
+		// width: 100%;
+		// text-align: center;
+		// color: $gray-dark;
+		// font-weight: bold;
+		// font-size: 2em;
+		// opacity: 1;
+		// transition: opacity 0.25s;
 	}
-	&:hover {
-		span {
-			opacity: 0;
-			transition: opacity 0.25s;
-		}
-		img {
-			opacity: 1;
-			transition: opacity 0.25s;
-		}
+	// &:hover {
+	// 	span {
+	// 		opacity: 0;
+	// 	}
+	// 	img {
+	// 		opacity: 1;
+	// 	}
+	// }
+}
+
+@media (min-width: $screen-sm-min) {
+	.project-information {
+		text-align: right;
 	}
 }

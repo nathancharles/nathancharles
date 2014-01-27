@@ -8,7 +8,7 @@ description: Resume of Nathan Cook
 		%h2.section-title.col-sm-4 Related Experience
 	.row
 		- data.resume.experience.each do |web_job|
-			.entry.row
+			.entry
 				%p.date.col-sm-4
 					%i= time_span(web_job.start_date, web_job.end_date)
 				.meta.col-sm-8
@@ -24,7 +24,7 @@ description: Resume of Nathan Cook
 		%h2.section-title.col-sm-4 Employment
 	.row
 		- data.resume.employment.each do |job|
-			.entry.row
+			.entry
 				%p.date.col-sm-4
 					%i= time_span(job.start_date, job.end_date)
 				.meta.col-sm-8
@@ -40,7 +40,7 @@ description: Resume of Nathan Cook
 		%h2.section-title.col-sm-4 Education
 	.row
 		- data.resume.education.each do |school|
-			.entry.row
+			.entry
 				%p.date.col-sm-4
 					%i= time_span(school.start_date, school.end_date)
 				.meta.col-sm-8
@@ -57,7 +57,7 @@ description: Resume of Nathan Cook
 	.row
 		%h2.section-title.col-sm-4 Skills
 	.row
-		.entry.row
+		.entry
 			.meta.col-sm-8.col-sm-offset-4
 				%p
 					- data.resume.skills.each do |skill|
