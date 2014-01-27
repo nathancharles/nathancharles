@@ -69,5 +69,5 @@ activate :sync do |sync|
   sync.aws_secret_access_key = data.aws.aws_secret_access_key # Your Amazon S3 access secret
   sync.existing_remote_files = 'delete' # What to do with your existing remote files? ( keep or delete )
   # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
-  sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
+  # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
 end
