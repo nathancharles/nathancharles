@@ -1,0 +1,13 @@
+/* TEAM */
+Your title: Nathan Cook
+Site: nathancharles.net
+Twitter: anudesign
+Location: Chicago, IL, USA
+
+/* THANKS */
+
+/* SITE */
+Last update: 2014/01/26
+Standards: HTML5, CSS3, JS, RUBY
+Components: jQuery
+Software: Sublime Text 2
