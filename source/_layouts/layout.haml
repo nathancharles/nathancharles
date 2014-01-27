@@ -17,6 +17,7 @@
 
   = stylesheet_link_tag "all", "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
   = javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "all"
+  = partial '/_partials/google_analytics'
 
 %body{:class => page_classes}
   %header.header
@@ -27,7 +28,7 @@
             = succeed Haml::Engine.new('%strong cook').render do
               = succeed Haml::Engine.new('charles').render do
                 %strong nathan
-      = partial '/partials/navigation'
+      = partial '/_partials/navigation'
 
   .content.container
     = yield
@@ -48,4 +49,4 @@
           %span#current-year
             = Time.now.year
           Nathan Charles Cook
-      = partial '/partials/navigation'
+      = partial '/_partials/navigation'

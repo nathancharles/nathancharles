@@ -47,6 +47,7 @@ ignore "/templates/*"
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'images'
+config[:layouts_dir] = '_layouts'
 
 activate :directory_indexes
 activate :relative_assets
