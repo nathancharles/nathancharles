@@ -58,14 +58,16 @@ end
 
 sprockets.append_path Modernizr.path
 
-# Activate sync extension
-activate :sync do |sync|
-  sync.fog_provider = data.aws.fog_provider # Your storage provider
-  sync.fog_directory = data.aws.fog_directory # Your bucket name
-  sync.fog_region = data.aws.fog_region # The region your storage bucket is in (eg us-east-1, us-west-1, eu-west-1, ap-southeast-1 )
-  sync.aws_access_key_id = data.aws.aws_access_key_id # Your Amazon S3 access key
-  sync.aws_secret_access_key = data.aws.aws_secret_access_key # Your Amazon S3 access secret
-  sync.existing_remote_files = 'delete' # What to do with your existing remote files? ( keep or delete )
-  # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
-  # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = data.aws.bucket # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = data.aws.region     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = data.aws.aws_access_key_id
+  s3_sync.aws_secret_access_key      = data.aws.aws_secret_access_key
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = true # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
 end

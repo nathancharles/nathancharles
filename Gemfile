@@ -19,4 +19,4 @@ gem 'modernizr'
 gem 'compass-normalize'
 gem 'bootstrap-sass', "3.0.3"
 gem 'json'
-gem "middleman-sync", "~> 3.0.12"
+gem "middleman-s3_sync"
