@@ -1,0 +1,18 @@
+---
+title: #{project.name}
+---
+
+- content_for(:title, project.name)
+- content_for(:description, project.description)
+
+.project-information.col-sm-4
+  %h1
+    = project.name
+  %p
+    = project.description
+  - if !project.externalUrl.empty?
+    = link_to pretty_url(project.externalUrl), project.externalUrl, {:target => "_blank", :title => project.name}
+
+.project-images.col-sm-8
+  -project.images.each do |image|
+    = image_tag "/assets/images/#{image}"

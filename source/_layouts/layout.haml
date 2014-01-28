@@ -37,7 +37,7 @@
     - data.projects.each do |project|
       .project.col-xs-4.col-sm-3
         %a{:href => "/" + sluggify(project.shortName)}
-          = image_tag "/assets/images/"+project.images[0]
+          = image_tag "/assets/images/"+project.images[0], {:alt => project.name}
           %span
             = project.shortName
 
