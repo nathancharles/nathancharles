@@ -1,5 +1,5 @@
 def institution_title(name, link)
-	return link_to name, link if (link && link != "")
+	return link_to name, link, :target => "_blank" if (link && link != "")
 	name
 end
 
