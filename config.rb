@@ -31,6 +31,8 @@ data.projects.each do |project|
   proxy "/#{project.shortName.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}.html", "/templates/projects.html", :locals => { :project => project }, :ignore => true
 end
 
+ignore "/contact.haml"
+
 ###
 # Helpers
 ###
