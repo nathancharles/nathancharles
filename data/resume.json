@@ -78,6 +78,13 @@
 				"secondary concentration in printmaking",
 				"graduated cum laude"
 			]
+		},
+		{
+			"school":"Anoka-Ramsey Community College",
+			"major":"Computer Science",
+			"start_date":"2002",
+			"end_date":"2004",
+			"misc":[]
 		}
 	],
 	"skills":[
