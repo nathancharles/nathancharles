@@ -2,11 +2,11 @@ require 'pdfkit'
 
 PDFKit.configure do |config|
   config.default_options = {
-    :disable_smart_shrinking => true,
     :margin_top => '0in',
     :margin_right => '0.75in',
     :margin_bottom => '0.75in',
-    :margin_left => '0.75in'
+    :margin_left => '0.75in',
+    :print_media_type => false
   }
 end
 
