@@ -19,4 +19,6 @@ gem 'modernizr'
 gem 'compass-normalize'
 gem 'bootstrap-sass', "3.0.3"
 gem 'json'
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
 gem "middleman-s3_sync"

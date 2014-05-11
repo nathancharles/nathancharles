@@ -1,0 +1,35 @@
+.container {
+	width: 800px;
+	max-width: 800px;
+}
+
+nav, .projects, .footer {
+	display: none;
+}
+
+.col-sm-4,
+.col-sm-6,
+.col-sm-8 {
+	float: left;
+}
+
+.col-sm-6,
+.col-sm-4 {
+	width: 33%;
+	text-align: right;
+}
+.col-sm-8 {
+	width: 66%;
+}
+.col-sm-offset-4 {
+	margin-left: 33%;
+}
+
+.section-title {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.site-title {
+	font-size: 165%;
+}

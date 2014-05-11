@@ -33,7 +33,7 @@
   .content.container
     = yield
 
-  %aside.container
+  %aside.container.projects
     - data.projects.each do |project|
       .project.col-xs-4.col-sm-3
         %a{:href => "/" + sluggify(project.shortName)}

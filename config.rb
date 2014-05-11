@@ -66,7 +66,7 @@ activate :s3_sync do |s3_sync|
   s3_sync.aws_access_key_id          = data.aws.aws_access_key_id
   s3_sync.aws_secret_access_key      = data.aws.aws_secret_access_key
   s3_sync.delete                     = false # We delete stray files by default.
-  s3_sync.after_build                = true # We do not chain after the build step by default.
+  s3_sync.after_build                = false # We do not chain after the build step by default.
   s3_sync.prefer_gzip                = true
   s3_sync.path_style                 = true
   s3_sync.reduced_redundancy_storage = false
