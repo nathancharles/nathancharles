@@ -17,11 +17,14 @@ task :build do
   puts status ? "Build Success" : "Build FAILED"
 
   # Build Resume PDF
-  resume_html = File.read("build/resume/index.html")
+  resume_html = File.read("build/resume-pdf/index.html")
   kit = PDFKit.new(resume_html, :page_size => 'Letter')
   kit.stylesheets << 'build/assets/stylesheets/all.css'
   kit.stylesheets << 'source/assets/stylesheets/resume-print.css'
   file = kit.to_file('build/assets/resume.pdf')
+
+  status = system("rm -rf build/resume-pdf")
+  puts status ? "Removed resume print page" : "FAILED TO REMOVE RESUME PRINT"
 end
 
 desc "Deploy website via rsync"

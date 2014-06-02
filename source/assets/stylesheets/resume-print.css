@@ -7,11 +7,16 @@ nav, .projects, .footer {
 	display: none;
 }
 
+.download-link {
+	display: none;
+}
+
 .header {
 	margin-top: 0;
 }
 .site-title {
 	padding-top: 4em;
+	margin-top: -1em;
 	background: url(/Users/nathandenise/workspace/nathancharles/build/assets/images/resume-header.jpg) center -2.5em transparent no-repeat;
 	background-size: 85% Auto;
 }
@@ -35,6 +40,7 @@ nav, .projects, .footer {
 }
 
 .section {
+	margin-top: -0.85em;
 	margin-bottom: 0;
 }
 
