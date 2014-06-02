@@ -7,6 +7,15 @@ nav, .projects, .footer {
 	display: none;
 }
 
+.header {
+	margin-top: 0;
+}
+.site-title {
+	padding-top: 4em;
+	background: url(/Users/nathandenise/workspace/nathancharles/build/assets/images/resume-header.jpg) center -2.5em transparent no-repeat;
+	background-size: 85% Auto;
+}
+
 .col-sm-4,
 .col-sm-6,
 .col-sm-8 {
@@ -23,6 +32,10 @@ nav, .projects, .footer {
 }
 .col-sm-offset-4 {
 	margin-left: 33%;
+}
+
+.section {
+	margin-bottom: 0;
 }
 
 .section-title {

@@ -46,6 +46,7 @@ ignore "/contact.haml"
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
+set :fonts_dir, 'assets/fonts'
 set :images_dir, 'images'
 config[:layouts_dir] = '_layouts'
 
