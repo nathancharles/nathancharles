@@ -1,5 +1,4 @@
 require 'compass-normalize'
-require 'modernizr'
 
 ###
 # Compass
@@ -58,8 +57,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
-
-sprockets.append_path Modernizr.path
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = data.aws.bucket # The name of the S3 bucket you are targetting. This is globally unique.
