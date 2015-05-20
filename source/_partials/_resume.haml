@@ -1,6 +1,6 @@
 .section
 	.row
-		%h2.section-title.col-sm-4 Related Experience
+		%h2.section-title.col-sm-4 Experience
 	.row
 		- data.resume.experience.each do |web_job|
 			.entry
@@ -13,22 +13,6 @@
 						%i= web_job.title
 						%br
 						= web_job.description.join(' ')
-
-.section
-	.row
-		%h2.section-title.col-sm-4 Employment
-	.row
-		- data.resume.employment.each do |job|
-			.entry
-				%p.date.col-sm-4
-					%i= time_span(job.start_date, job.end_date)
-				.meta.col-sm-8
-					%p
-						%strong= institution_title(job.employer, job.link)
-						%br
-						%i= job.title
-						%br
-						= job.description.join(' ')
 
 .section
 	.row
