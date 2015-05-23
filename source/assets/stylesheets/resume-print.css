@@ -29,14 +29,14 @@ nav, .projects, .footer {
 
 .col-sm-6,
 .col-sm-4 {
-	width: 33%;
+	width: 35%;
 	text-align: right;
 }
 .col-sm-8 {
-	width: 66%;
+	width: 64%;
 }
 .col-sm-offset-4 {
-	margin-left: 33%;
+	margin-left: 35%;
 }
 
 .section {
