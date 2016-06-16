@@ -3,9 +3,9 @@
 		{
 			"employer":"LinkedIn",
 			"link":"http://www.linkedin.com",
-			"title":"Web Developer",
+			"title":"Senior UI Engineer",
 			"description": [],
-			"start_date":"11.14"
+			"start_date":"03.16"
 		},
 		{
 			"employer":"Freelance",
@@ -15,6 +15,14 @@
 			],
 			"start_date":"11.08",
 			"end_date":""
+		},
+		{
+			"employer":"LinkedIn",
+			"link":"http://www.linkedin.com",
+			"title":"Web Developer",
+			"description": [],
+			"start_date":"11.14",
+			"end_date":"03.16"
 		},
 		{
 			"employer":"GoHealth Insurance",
